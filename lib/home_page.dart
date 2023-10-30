@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'list_item.dart';
 
   // массив для первого listview
-  const List<String> itemslistword = <String>["I","II","III","IV","V","VI","VII"];
+  const List<String> Dorokhis = <String>["I","II","III","IV","V","VI","VII"];
 
   // массив для второго listview
-  const List<String> itemslistnum = <String>["Первый", "Второй", "Третий", "Четвертый", "Пятый", "Шестой", "Седьмой"];
+  const List<String> Dorokhib = <String>["Первый", "Второй", "Третий", "Четвертый", "Пятый", "Шестой", "Седьмой"];
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -29,11 +29,11 @@ class HomePage extends StatelessWidget {
             height: MediaQuery.of(context).size.height * 0.5,      
             child: 
             ListView.builder(
-              itemCount: itemslistnum.length,              
+              itemCount: Dorokhib.length,              
             itemBuilder: (BuildContext context, int index,)
             
             {
-              return ListItem(textItem: itemslistnum[index].toString(),);
+              return ListItem(textItem: Dorokhib[index].toString(),);
             },            
             ),
             ),
@@ -44,11 +44,11 @@ class HomePage extends StatelessWidget {
             child:
             ListView.builder(
               scrollDirection: Axis.horizontal,
-              itemCount: itemslistnum.length,
+              itemCount: Dorokhis.length,
               itemBuilder: (BuildContext context, int index,)
 
               {
-                return ListItem(textItem: itemslistword[index].toString(),);
+                return ListItem(textItem: Dorokhis[index].toString(),);
               },
             ),
           ),
